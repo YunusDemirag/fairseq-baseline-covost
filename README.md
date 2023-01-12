@@ -12,7 +12,7 @@
 
 --------------------------------------------------------------------------------
 
-This is a fork of the fairseq repository used for creating a baseline with the covost dataset
+This is a fork of the [fairseq repository](https://github.com/facebookresearch/fairseq) used for creating a baseline with the [covost dataset](https://github.com/facebookresearch/covost)
 
 Fairseq(-py) is a sequence modeling toolkit that allows researchers and
 developers to train custom models for translation, summarization, language
