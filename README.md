@@ -12,6 +12,8 @@
 
 --------------------------------------------------------------------------------
 
+This is a fork of the fairseq repository used for creating a baseline with the covost dataset
+
 Fairseq(-py) is a sequence modeling toolkit that allows researchers and
 developers to train custom models for translation, summarization, language
 modeling and other text generation tasks.
@@ -237,5 +239,30 @@ Please cite as:
   author = {Myle Ott and Sergey Edunov and Alexei Baevski and Angela Fan and Sam Gross and Nathan Ng and David Grangier and Michael Auli},
   booktitle = {Proceedings of NAACL-HLT 2019: Demonstrations},
   year = {2019},
+}
+@misc{wang2020covost,
+    title={CoVoST 2: A Massively Multilingual Speech-to-Text Translation Corpus},
+    author={Changhan Wang and Anne Wu and Juan Pino},
+    year={2020},
+    eprint={2007.10310},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+@inproceedings{wang-etal-2020-covost,
+    title = "{C}o{V}o{ST}: A Diverse Multilingual Speech-To-Text Translation Corpus",
+    author = "Wang, Changhan  and
+      Pino, Juan  and
+      Wu, Anne  and
+      Gu, Jiatao",
+    booktitle = "Proceedings of The 12th Language Resources and Evaluation Conference",
+    month = may,
+    year = "2020",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://www.aclweb.org/anthology/2020.lrec-1.517",
+    pages = "4197--4203",
+    abstract = "Spoken language translation has recently witnessed a resurgence in popularity, thanks to the development of end-to-end models and the creation of new corpora, such as Augmented LibriSpeech and MuST-C. Existing datasets involve language pairs with English as a source language, involve very specific domains or are low resource. We introduce CoVoST, a multilingual speech-to-text translation corpus from 11 languages into English, diversified with over 11,000 speakers and over 60 accents. We describe the dataset creation methodology and provide empirical evidence of the quality of the data. We also provide initial benchmarks, including, to our knowledge, the first end-to-end many-to-one multilingual models for spoken language translation. CoVoST is released under CC0 license and free to use. We also provide additional evaluation data derived from Tatoeba under CC licenses.",
+    language = "English",
+    ISBN = "979-10-95546-34-4",
 }
 ```
