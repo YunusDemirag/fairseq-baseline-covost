@@ -1,5 +1,6 @@
 fairseq-train \
     data-bin/covost \
+    --save-dir checkpoints/transformer \
     --arch transformer_iwslt_de_en --share-decoder-input-output-embed \
     --optimizer adam --adam-betas '(0.9, 0.98)' --clip-norm 0.0 \
     --lr 5e-4 --lr-scheduler inverse_sqrt --warmup-updates 4000 \
@@ -12,4 +13,5 @@ fairseq-train \
     --eval-bleu-remove-bpe \
     --eval-bleu-print-samples \
     --best-checkpoint-metric bleu --maximize-best-checkpoint-metric \
-    --stop-time-hours 192
+    --stop-time-hours 192 \
+    --no-epoch-checkpoints
