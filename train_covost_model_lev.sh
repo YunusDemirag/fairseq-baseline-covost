@@ -1,7 +1,7 @@
 fairseq-train \
     data-bin/covost-joined \
-    --save-dir checkpoints/covost/levenshtein_transformer \
-    --ddp-backend=no_c10d \
+    --save-dir checkpoints/levenshtein_transformer \
+    --ddp-backend=legacy_ddp \
     --task translation_lev \
     --criterion nat_loss \
     --arch levenshtein_transformer \
@@ -9,7 +9,7 @@ fairseq-train \
     --share-all-embeddings \
     --optimizer adam --adam-betas '(0.9,0.98)' \
     --lr 0.0005 --lr-scheduler inverse_sqrt \
-    --min-lr '1e-09' --warmup-updates 10000 \
+    --stop-min-lr '1e-09' --warmup-updates 10000 \
     --warmup-init-lr '1e-07' --label-smoothing 0.1 \
     --dropout 0.3 --weight-decay 0.01 \
     --decoder-learned-pos \
@@ -20,4 +20,4 @@ fairseq-train \
     --max-tokens 8000 \
     --save-interval-updates 10000 \
     --max-update 300000 \
-    --no-epoch-checkpoints 
+    --no-epoch-checkpoints --batch-size 128
